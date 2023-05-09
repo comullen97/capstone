@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css">
+    <title>Capstone</title>
+</head>
+<body>
+    <h1>Welcome to, Love Yourself First!</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#" id="daily-link">Daily</a></li>
+            <li><a href="#" id="weekly-link">Weekly</a></li>
+            <li><a href="#" id="monthly-link">Monthly</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h4>Tasks to Accomplish</h4>
+            <ul id="daily-tasks">
+                <li><input type="checkbox" id="task-1" name="task-1"><label for="task-1">Make your Bed</label></li>
+                <li><input type="checkbox" id="task-2" name="task-2"><label for="task-2">Wash your Face</label></li>
+                <li><input type="checkbox" id="task-3" name="task-3"><label for="task-3">Drink Water</label></li>
+            </ul>
+            <ul id="weekly-tasks">
+                <li><input type="checkbox" id="task-1" name="task-1"><label for="task-1">Switch Bed Sheets</label></li>
+                <li><input type="checkbox" id="task-2" name="task-2"><label for="task-2">Vaccum</label></li>
+                <li><input type="checkbox" id="task-3" name="task-3"><label for="task-3">Clean out Fridge</label></li>
+            </ul>
+            <ul id="monthly-tasks">
+                <li><input type="checkbox" id="task-1" name="task-1"><label for="task-1">Clean Mattress</label></li>
+                <li><input type="checkbox" id="task-2" name="task-2"><label for="task-2">Deep Clean Bathroom</label></li>
+                <li><input type="checkbox" id="task-3" name="task-3"><label for="task-3">Deep Clean Kitchen</label></li>
+            </ul>
+            <form id="add-task-form">
+                <input type="text" id="new-task" placeholder="Add new task...">
+                <select id="task-type">
+                  <option value="daily">Daily</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="monthly">Monthly</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+            <img src="data:image/jpeg;base64,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">
+                <h6>Click me for motivation</h6>
+        </main>
+    <section class="background">
+        <div class="bio">
+        <h3>Who's behind the app?!</h3>
+        <br>
+        <p>Hi, my name is Casey! I have been working on creating a safe space for
+        individuals like me who suffer from ADHD, anxiety & depression. I created this
+        page a tool to help stay on track, and accomplish all those little tasks throughout the day.
+        I have always suffered from getting overwhelmed easily, that would lead to procrastinating on tasks.
+        This would lead to a snowball effect of being overwhelmed by house chores pilling up, and school, work, and
+        other responsibilities not getting accomplished either.
+        Don't worry you are not alone!
+        </p>
+        </div>
+        <div class="story">
+        <h3>The Goal!</h3>
+        <br>
+        <p>We all know the struggles mental illness can have on a persons daily life. And when someone is stuck in a depressive
+            state of mind. Cleaning/hygiene is probably the last thing on your mind. However it is the easiest way to get out of the blues.
+            So my goal is to help motivate, track and remind you of what to get done daily, weekly, and monthly!
+            It is shown in studies that working or living in a clutter and dirty area increases levels or cortisol which is
+            directly linked to anxiety, and even little acts of self care can have a large impact on how you manage stress, and increase your energy!
+            Disclosure: this is NOT a cure for your mental health issues, but potential coping technics that can help improve your day!
+
+            Now click the picture above for a motivation quote to help get your spirits up!
+        </p>
+        </div>
+        </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js"></script>
+    </body>
+</html>
